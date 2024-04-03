@@ -1,0 +1,23 @@
+@charset "UTF-8";
+body {
+    font-family: Arial, sans-serif;
+    color: #333333;
+    background: linear-gradient(to right, #D9DFEB, #889AC0);
+}
+
+#_card {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    padding-left: 1%;
+    padding-right: 1%;
+    color: #333333;
+    padding-top: 5px;
+    -webkit-border-radius: 5px 10px; /* Safari  */
+    -moz-border-radius: 5px 10px; /* Firefox */
+    background: linear-gradient(to bottom, #888888, #CCCCCC);
+}
+
+#GridView {
+    -webkit-border-radius: 5px 10px; /* Safari  */
+    -moz-border-radius: 5px 10px; /* Firefox */
+}

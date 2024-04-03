@@ -1,0 +1,26 @@
+insert into duracServ12891927 (descripcion, duracion) VALUES ('15 min', 15);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('1/2 hora', 30);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('45 min', 45);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('1 hora', 60);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('1 hr. 15 min', 75);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('1 hr. y 1/2', 90);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('1 hr. 45 ', 105);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('2 horas', 120);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('2 hrs. 15', 135);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('2 hrs. 1/2', 150);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('2 hrs. 45', 165);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('3 horas', 180);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('3 hrs. 15', 195);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('3 hrs. 1/2', 210);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('3 hrs. 45', 225);
+insert into duracServ12891927 (descripcion, duracion) VALUES ('4 horas', 240);
+
+insert into serv12891927 (descripcion, duracion) VALUES ('Alisado', 240);
+insert into serv12891927 (descripcion, duracion) VALUES ('Tintura', 180);
+insert into serv12891927 (descripcion, duracion) VALUES ('Corte', 30);
+insert into serv12891927 (descripcion, duracion) VALUES ('Lavado', 30);
+insert into serv12891927 (descripcion, duracion) VALUES ('Peinado', 60);
+insert into serv12891927 (descripcion, duracion) VALUES ('Mechas', 120);
+insert into serv12891927 (descripcion, duracion) VALUES ('Permanente', 135);
+insert into serv12891927 (descripcion, duracion) VALUES ('Decoloración', 150);
+

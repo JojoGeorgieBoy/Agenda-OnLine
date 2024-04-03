@@ -1,0 +1,454 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E65C9C42-0318-4BF7-8C2A-67B87657EBE7}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WebAppApplication</RootNamespace>
+    <AssemblyName>WebAppApplication</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44307</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication>disabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\all.css" />
+    <Content Include="css\all.js" />
+    <Content Include="css\all.min.css" />
+    <Content Include="css\all.min.js" />
+    <Content Include="css\bootstrap-theme.css" />
+    <Content Include="css\bootstrap-theme.min.css" />
+    <Content Include="css\bootstrap.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\brands.css" />
+    <Content Include="css\brands.js" />
+    <Content Include="css\brands.min.css" />
+    <Content Include="css\brands.min.js" />
+    <Content Include="css\brands.svg" />
+    <Content Include="css\conflict-detection.js" />
+    <Content Include="css\conflict-detection.min.js" />
+    <Content Include="css\Excperimentstyle.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\font-awesome.min.css" />
+    <Content Include="css\fontawesome-webfont.svg" />
+    <Content Include="css\fontawesome.css" />
+    <Content Include="css\fontawesome.js" />
+    <Content Include="css\fontawesome.min.css" />
+    <Content Include="css\fontawesome.min.js" />
+    <Content Include="css\regular.css" />
+    <Content Include="css\regular.js" />
+    <Content Include="css\regular.min.css" />
+    <Content Include="css\regular.min.js" />
+    <Content Include="css\regular.svg" />
+    <Content Include="css\solid.css" />
+    <Content Include="css\solid.js" />
+    <Content Include="css\solid.min.css" />
+    <Content Include="css\solid.min.js" />
+    <Content Include="css\solid.svg" />
+    <Content Include="css\style.css" />
+    <Content Include="css\styles.css" />
+    <Content Include="css\tiny-slider.css" />
+    <Content Include="dist\js\scripts.js" />
+    <Content Include="horarios.aspx" />
+    <Content Include="images\edit.png" />
+    <Content Include="images\MujerDePerfil.png" />
+    <Content Include="js\all.js" />
+    <Content Include="js\bootstrap-datepicker.js" />
+    <Content Include="js\bootstrap.bundle.min.js" />
+    <Content Include="js\bootstrap.js" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\chart-data.js" />
+    <Content Include="js\chart.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\easypiechart-data.js" />
+    <Content Include="js\easypiechart.js" />
+    <Content Include="js\jquery-1.10.2.js" />
+    <Content Include="js\npm.js" />
+    <Content Include="js\scripts.js" />
+    <Content Include="js\stacktable.min.js" />
+    <Content Include="js\tiny-slider.js" />
+    <Content Include="grabar.aspx" />
+    <Content Include="parametros.aspx" />
+    <Content Include="Test.aspx" />
+    <Content Include="servicios.aspx" />
+    <Content Include="reservas.aspx" />
+    <Content Include="default.aspx" />
+    <Content Include="images\style.css" />
+    <Content Include="css\svg-with-js.css" />
+    <Content Include="css\svg-with-js.min.css" />
+    <Content Include="css\v4-font-face.css" />
+    <Content Include="css\v4-font-face.min.css" />
+    <Content Include="css\v4-shims.css" />
+    <Content Include="css\v4-shims.js" />
+    <Content Include="css\v4-shims.min.css" />
+    <Content Include="css\v4-shims.min.js" />
+    <Content Include="css\v5-font-face.css" />
+    <Content Include="css\v5-font-face.min.css" />
+    <Content Include="dist\css\bootstrap-grid.css" />
+    <Content Include="dist\css\bootstrap-grid.min.css" />
+    <Content Include="dist\css\bootstrap-reboot.css" />
+    <Content Include="dist\css\bootstrap-reboot.min.css" />
+    <Content Include="dist\css\bootstrap.css" />
+    <Content Include="dist\css\bootstrap.min.css" />
+    <Content Include="dist\js\bootstrap.bundle.js" />
+    <Content Include="dist\js\bootstrap.bundle.min.js" />
+    <Content Include="dist\js\bootstrap.js" />
+    <Content Include="dist\js\bootstrap.min.js" />
+    <Content Include="fonts\all.css" />
+    <Content Include="fonts\all.js" />
+    <Content Include="fonts\all.min.css" />
+    <Content Include="fonts\all.min.js" />
+    <Content Include="fonts\brands.css" />
+    <Content Include="fonts\brands.js" />
+    <Content Include="fonts\brands.min.css" />
+    <Content Include="fonts\brands.min.js" />
+    <Content Include="fonts\brands.svg" />
+    <Content Include="fonts\conflict-detection.js" />
+    <Content Include="fonts\conflict-detection.min.js" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="fonts\fontawesome.css" />
+    <Content Include="fonts\fontawesome.js" />
+    <Content Include="fonts\fontawesome.min.css" />
+    <Content Include="fonts\fontawesome.min.js" />
+    <Content Include="fonts\regular.css" />
+    <Content Include="fonts\regular.js" />
+    <Content Include="fonts\regular.min.css" />
+    <Content Include="fonts\regular.min.js" />
+    <Content Include="fonts\regular.svg" />
+    <Content Include="fonts\solid.css" />
+    <Content Include="fonts\solid.js" />
+    <Content Include="fonts\solid.min.css" />
+    <Content Include="fonts\solid.min.js" />
+    <Content Include="fonts\solid.svg" />
+    <Content Include="fonts\svg-with-js.css" />
+    <Content Include="fonts\svg-with-js.min.css" />
+    <Content Include="fonts\v4-font-face.css" />
+    <Content Include="fonts\v4-font-face.min.css" />
+    <Content Include="fonts\v4-shims.css" />
+    <Content Include="fonts\v4-shims.js" />
+    <Content Include="fonts\v4-shims.min.css" />
+    <Content Include="fonts\v4-shims.min.js" />
+    <Content Include="fonts\v5-font-face.css" />
+    <Content Include="fonts\v5-font-face.min.css" />
+    <Content Include="images\favicon.ico" />
+    <Content Include="images\sky.jpg" />
+    <Content Include="error.aspx" />
+    <Content Include="images\Ajustes.jpg" />
+    <Content Include="images\balayage.png" />
+    <Content Include="images\cielo.jpg" />
+    <Content Include="images\peluqueria.jpg" />
+    <Content Include="scripts\bootstrap.js" />
+    <Content Include="images\Arroyo1.jpg" />
+    <Content Include="images\FixStayOver.jpg" />
+    <Content Include="images\FixStayOver2.jpg" />
+    <Content Include="images\Olas1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="horarios.aspx.cs">
+      <DependentUpon>horarios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="horarios.aspx.designer.cs">
+      <DependentUpon>horarios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="grabar.aspx.cs">
+      <DependentUpon>grabar.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="grabar.aspx.designer.cs">
+      <DependentUpon>grabar.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="parametros.aspx.cs">
+      <DependentUpon>parametros.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="parametros.aspx.designer.cs">
+      <DependentUpon>parametros.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Test.aspx.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Test.aspx.designer.cs">
+      <DependentUpon>Test.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="servicios.aspx.cs">
+      <DependentUpon>servicios.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="servicios.aspx.designer.cs">
+      <DependentUpon>servicios.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="reservas.aspx.cs">
+      <DependentUpon>reservas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="reservas.aspx.designer.cs">
+      <DependentUpon>reservas.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ClassUtilitarios.cs" />
+    <Compile Include="error.aspx.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="error.aspx.designer.cs">
+      <DependentUpon>error.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="images\close.png" />
+    <Content Include="images\delete.png" />
+    <Content Include="images\select.png" />
+    <Content Include="images\trash.jpg" />
+    <Content Include="scripts\bootstrap-theme.css" />
+    <Content Include="scripts\bootstrap-theme.min.css" />
+    <Content Include="scripts\bootstrap.css" />
+    <Content Include="scripts\bootstrap.min.css" />
+    <Content Include="scripts\jquery-3.6.0.js" />
+    <Content Include="scripts\jquery-ui-1.13.2\AUTHORS.txt" />
+    <Content Include="scripts\jquery-ui-1.13.2\external\jquery\jquery.js" />
+    <Content Include="scripts\jquery-ui-1.13.2\images\ui-icons_444444_256x240.png" />
+    <Content Include="scripts\jquery-ui-1.13.2\images\ui-icons_555555_256x240.png" />
+    <Content Include="scripts\jquery-ui-1.13.2\images\ui-icons_777620_256x240.png" />
+    <Content Include="scripts\jquery-ui-1.13.2\images\ui-icons_777777_256x240.png" />
+    <Content Include="scripts\jquery-ui-1.13.2\images\ui-icons_cc0000_256x240.png" />
+    <Content Include="scripts\jquery-ui-1.13.2\images\ui-icons_ffffff_256x240.png" />
+    <Content Include="scripts\jquery-ui-1.13.2\index.html" />
+    <Content Include="scripts\jquery-ui-1.13.2\jquery-ui.css" />
+    <Content Include="scripts\jquery-ui-1.13.2\jquery-ui.js" />
+    <Content Include="scripts\jquery-ui-1.13.2\jquery-ui.min.css" />
+    <Content Include="scripts\jquery-ui-1.13.2\jquery-ui.min.js" />
+    <Content Include="scripts\jquery-ui-1.13.2\jquery-ui.structure.css" />
+    <Content Include="scripts\jquery-ui-1.13.2\jquery-ui.structure.min.css" />
+    <Content Include="scripts\jquery-ui-1.13.2\jquery-ui.theme.css" />
+    <Content Include="scripts\jquery-ui-1.13.2\jquery-ui.theme.min.css" />
+    <Content Include="scripts\jquery-ui-1.13.2\LICENSE.txt" />
+    <Content Include="scripts\Site.css" />
+    <Content Include="Web.config" />
+    <Content Include="scripts\bootstrap-theme.css.map" />
+    <Content Include="scripts\bootstrap-theme.min.css.map" />
+    <Content Include="scripts\bootstrap.css.map" />
+    <Content Include="scripts\bootstrap.min.css.map" />
+    <Content Include="scripts\jquery-ui-1.13.2\package.json" />
+    <Content Include="dist\css\bootstrap-grid.css.map" />
+    <Content Include="dist\css\bootstrap-grid.min.css.map" />
+    <Content Include="dist\css\bootstrap-reboot.css.map" />
+    <Content Include="dist\css\bootstrap-reboot.min.css.map" />
+    <Content Include="dist\css\bootstrap.css.map" />
+    <Content Include="dist\css\bootstrap.min.css.map" />
+    <Content Include="dist\js\bootstrap.bundle.js.map" />
+    <Content Include="dist\js\bootstrap.bundle.min.js.map" />
+    <Content Include="dist\js\bootstrap.js.map" />
+    <Content Include="dist\js\bootstrap.min.js.map" />
+    <Content Include="fonts\brands.less" />
+    <Content Include="fonts\brands.scss" />
+    <Content Include="fonts\categories.yml" />
+    <Content Include="fonts\fa-brands-400.ttf" />
+    <Content Include="fonts\fa-brands-400.woff2" />
+    <Content Include="fonts\fa-regular-400.ttf" />
+    <Content Include="fonts\fa-regular-400.woff2" />
+    <Content Include="fonts\fa-solid-900.ttf" />
+    <Content Include="fonts\fa-solid-900.woff2" />
+    <Content Include="fonts\fa-v4compatibility.ttf" />
+    <Content Include="fonts\fa-v4compatibility.woff2" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\fontawesome.less" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\fontawesome.scss" />
+    <Content Include="fonts\icon-families.json" />
+    <Content Include="fonts\icon-families.yml" />
+    <Content Include="fonts\icons.json" />
+    <Content Include="fonts\icons.yml" />
+    <Content Include="fonts\regular.less" />
+    <Content Include="fonts\regular.scss" />
+    <Content Include="fonts\shims.json" />
+    <Content Include="fonts\shims.yml" />
+    <Content Include="fonts\solid.less" />
+    <Content Include="fonts\solid.scss" />
+    <Content Include="fonts\sponsors.yml" />
+    <Content Include="fonts\v4-shims.less" />
+    <Content Include="fonts\v4-shims.scss" />
+    <Content Include="fonts\_animated.less" />
+    <Content Include="fonts\_animated.scss" />
+    <Content Include="fonts\_bordered-pulled.less" />
+    <Content Include="fonts\_bordered-pulled.scss" />
+    <Content Include="fonts\_core.less" />
+    <Content Include="fonts\_core.scss" />
+    <Content Include="fonts\_fixed-width.less" />
+    <Content Include="fonts\_fixed-width.scss" />
+    <Content Include="fonts\_functions.scss" />
+    <Content Include="fonts\_icons.less" />
+    <Content Include="fonts\_icons.scss" />
+    <Content Include="fonts\_list.less" />
+    <Content Include="fonts\_list.scss" />
+    <Content Include="fonts\_mixins.less" />
+    <Content Include="fonts\_mixins.scss" />
+    <Content Include="fonts\_rotated-flipped.less" />
+    <Content Include="fonts\_rotated-flipped.scss" />
+    <Content Include="fonts\_screen-reader.less" />
+    <Content Include="fonts\_screen-reader.scss" />
+    <Content Include="fonts\_shims.less" />
+    <Content Include="fonts\_shims.scss" />
+    <Content Include="fonts\_sizing.less" />
+    <Content Include="fonts\_sizing.scss" />
+    <Content Include="fonts\_stacked.less" />
+    <Content Include="fonts\_stacked.scss" />
+    <Content Include="fonts\_variables.less" />
+    <Content Include="fonts\_variables.scss" />
+    <Content Include="css\_animated.less" />
+    <Content Include="css\_animated.scss" />
+    <Content Include="css\_bordered-pulled.less" />
+    <Content Include="css\_bordered-pulled.scss" />
+    <Content Include="css\_core.less" />
+    <Content Include="css\_core.scss" />
+    <Content Include="css\_fixed-width.less" />
+    <Content Include="css\_fixed-width.scss" />
+    <Content Include="css\_functions.scss" />
+    <Content Include="css\_icons.less" />
+    <Content Include="css\_icons.scss" />
+    <Content Include="css\_list.less" />
+    <Content Include="css\_list.scss" />
+    <Content Include="css\_mixins.less" />
+    <Content Include="css\_mixins.scss" />
+    <Content Include="css\_rotated-flipped.less" />
+    <Content Include="css\_rotated-flipped.scss" />
+    <Content Include="css\_screen-reader.less" />
+    <Content Include="css\_screen-reader.scss" />
+    <Content Include="css\_shims.less" />
+    <Content Include="css\_shims.scss" />
+    <Content Include="css\_sizing.less" />
+    <Content Include="css\_sizing.scss" />
+    <Content Include="css\_stacked.less" />
+    <Content Include="css\_stacked.scss" />
+    <Content Include="css\_variables.less" />
+    <Content Include="css\_variables.scss" />
+    <Content Include="css\brands.less" />
+    <Content Include="css\brands.scss" />
+    <Content Include="css\categories.yml" />
+    <Content Include="css\fa-brands-400.ttf" />
+    <Content Include="css\fa-brands-400.woff2" />
+    <Content Include="css\fa-regular-400.ttf" />
+    <Content Include="css\fa-regular-400.woff2" />
+    <Content Include="css\fa-solid-900.ttf" />
+    <Content Include="css\fa-solid-900.woff2" />
+    <Content Include="css\fa-v4compatibility.ttf" />
+    <Content Include="css\fa-v4compatibility.woff2" />
+    <Content Include="css\fontawesome-webfont.eot" />
+    <Content Include="css\fontawesome-webfont.ttf" />
+    <Content Include="css\fontawesome-webfont.woff" />
+    <Content Include="css\fontawesome-webfont.woff2" />
+    <Content Include="css\fontawesome.less" />
+    <Content Include="css\FontAwesome.otf" />
+    <Content Include="css\fontawesome.scss" />
+    <Content Include="css\icon-families.json" />
+    <Content Include="css\icon-families.yml" />
+    <Content Include="css\icons.json" />
+    <Content Include="css\icons.yml" />
+    <Content Include="css\regular.less" />
+    <Content Include="css\regular.scss" />
+    <Content Include="css\shims.json" />
+    <Content Include="css\shims.yml" />
+    <Content Include="css\solid.less" />
+    <Content Include="css\solid.scss" />
+    <Content Include="css\sponsors.yml" />
+    <Content Include="css\v4-shims.less" />
+    <Content Include="css\v4-shims.scss" />
+    <Content Include="css\bootstrap-theme.css.map" />
+    <Content Include="css\bootstrap-theme.min.css.map" />
+    <Content Include="css\bootstrap.css.map" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>images\favicon.ico</ApplicationIcon>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53787</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44307/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
